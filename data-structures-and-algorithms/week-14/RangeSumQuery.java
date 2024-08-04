@@ -5,4 +5,4 @@ public class RangeSumQuery {
         prefix  = new int[nums.length +1];
     }
     }
-    
+    //
