@@ -20,7 +20,7 @@ public class SortColors {
         nums[mid] = nums[high];
         nums[high] = temp;
         high--;
-        //
+        
 
     }
    }
