@@ -2,11 +2,11 @@ public class FindMinimumInRotatedArray {
     public int findMin(int[] nums) {
         int n = nums.length;
 
-        if(nums == null || n == 0){
+        if (nums == null || n == 0) {
 
-        if(n == 1) return nums[0];
+        if (n == 1) return nums[0];
 
-        if(nums[0] < nums[n-1]) return nums[0];
+        if (nums[0] < nums[n-1]) return nums[0];
 
         int left = 0;
         int right = nums.length - 1;
@@ -24,6 +24,7 @@ public class FindMinimumInRotatedArray {
         } else {
             right = middle-1;
         }
+
         }
        
     }
