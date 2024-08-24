@@ -14,11 +14,11 @@ public class FindMinimumInRotatedArray {
         while (left<=right) {
             int middle = (left+right)/2;
 
-        if(middle > 0 && nums[middle - 1] > nums[middle]) return nums[middle];
+        if (middle > 0 && nums[middle - 1] > nums[middle]) return nums[middle];
 
         
 
-        if(nums[middle] > nums[right]) {
+        if (nums[middle] > nums[right]) {
             left = middle+1;
 
         } else {
