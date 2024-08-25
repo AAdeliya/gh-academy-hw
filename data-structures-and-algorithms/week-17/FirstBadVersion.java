@@ -5,12 +5,12 @@ public class FirstBadVersion extends VersionControl{
         int right = n;
         int answer = -1;
 
-        while(left<=right){
+        while( left<=right) {
             int middle = left + (right+left)/2;
-            if(!isBadVersion(middle)){
+            if (!isBadVersion(middle)) {
                 left = middle+1;
 
-            }else{
+            } else {
                 answer = middle;
                 right = middle-1;
 
