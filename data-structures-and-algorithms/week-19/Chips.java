@@ -17,8 +17,9 @@ public class Chips {
         
         for (int action : result) {
             System.out.println(action + " ");
-            
+
         }
+        //
     }
     
 }
