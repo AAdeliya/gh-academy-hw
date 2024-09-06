@@ -1,25 +1,35 @@
+import java.io.PrintWriter;
+
 public class Chips {
-    public static List<Integer> solveChipsProblem(int n) {
-        List<Ineger> actions = new ArrayList<>();
+    private static class Solution{
+        private InputReader in_;
+        private PrintWriter out_;
 
-        for(int = 1; i <=N; i++) {
-            actions.add(i);
-        }
-        for (int i= N; i>= 1; i--) {
-            actions.add(-i);
+        private void put(int n) {
+            if (n == 1) {
+                out_.print("1");
+                return;
 
+            }
+            put (n - 1) {
+                out_.print(n + " ");
+                remove(n -1) ;
+
+            } 
+
+            private void remove (int n) {
+                if(n == 1) {
+                    out_.print(" -1");
+                    return;
+
+                }
+                put (n-1);
+                out_.print (-n + " ");
+                remove (n-1);
+            }
         }
-        return actions;
     }
-    public static void main(String[] args) {
-        int N =3;
-        List<Integer> result = solveChipsProblem(N);
-        
-        for (int action : result) {
-            System.out.println(action + " ");
-
-        }
-        
-    }
+      
     
+}
 }
