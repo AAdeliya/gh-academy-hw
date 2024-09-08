@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Combinations {
     public List<List<Integer>> combine (int n, int k) {
         List<List<Integer>> combs = new ArrayList<List<Integer>>();
@@ -9,7 +12,7 @@ public class Combinations {
 
     public static void combine(List<List<Integer>> combs, List<Integer> comb, int start, int n, int k) {
         if (k == 0) {
-            combs.add(new ArrayList<Ineger>(comb));
+            combs.add(new ArrayList<Integer>(comb));
             return;
 
         }
