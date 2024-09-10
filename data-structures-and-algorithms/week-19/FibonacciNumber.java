@@ -6,7 +6,7 @@ public class FibonacciNumber {
     int second = 1;
     int sum = 0;
 
-    if(n == 0 || n==1) {
+    if (n == 0 || n==1) {
         return n;
 
     } else {

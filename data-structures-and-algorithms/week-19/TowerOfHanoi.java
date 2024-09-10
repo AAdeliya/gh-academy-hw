@@ -10,8 +10,6 @@ public class TowerOfHanoi {
             System.out.println(n + " " + from + " " + to);
             hanoi(n - 1, aux, to);
         }
- 
-
     }
 }
     
