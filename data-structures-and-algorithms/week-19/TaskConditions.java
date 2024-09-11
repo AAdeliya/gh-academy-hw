@@ -6,9 +6,7 @@ public class TaskConditions {
         if (n == 1) {
             out_.print("1 ");
             return;
-
-
-        } 
+} 
 
         put(n-1);
         out_.print(n + "");
@@ -26,7 +24,7 @@ public class TaskConditions {
         put(n-1);
         out_.print(-n+ "");
         remove(n-1);
-         
+
     }
 
     
