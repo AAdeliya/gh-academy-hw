@@ -16,8 +16,6 @@ public class TwoSumIIinputArrayIsSorted {
 
             } else {
                 left++;
-
-
             }
         }
         return new int[] {-1, -1};
