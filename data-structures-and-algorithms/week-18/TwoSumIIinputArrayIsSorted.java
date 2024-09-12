@@ -13,7 +13,7 @@ public class TwoSumIIinputArrayIsSorted {
 
             } else if(total> target) {
                 right--;
-
+ 
             } else {
                 left++;
             }
@@ -22,3 +22,5 @@ public class TwoSumIIinputArrayIsSorted {
     }
     
 }
+ System.out.println(" Hello World! ");
+ 

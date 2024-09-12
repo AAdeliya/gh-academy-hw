@@ -16,6 +16,12 @@ public class CapacityToShipPackagesWithinDdays {
                 } else {
                     cur += w;
 
+                } //privet // hello 
+
+                hello my name is adeliya 
+
+                for (int i = 0; i<=n; i++) {
+
                 }
             }
             if (need > D) {
