@@ -5,23 +5,22 @@ import java.util.List;
 import java.util.Map;
 
 public class GroupAnagrams {
-    public List<List<List, String>> groupAnogromy(String [] str){
-        Map<String, List<String>> map = new HashMap<>();  //String is a key, List<Strng > value
-        for (String : str) { //iterate thru each words in the collection string because String[] str
-            char[] chars = word.toCharArray(); //convert word into charArray ['c'. 'a', 't']
-            Arrays.sort(chars); //sort array ['a', 'c', 't']
-            String sortedArray = new String(chars); //convert into string ["act"]
-
-            if (!map.containsKey(sortedWord)) { //check if ["act"] exists into map
-                map.put(sortedArray, new ArrayList<>()); //if not then add to the map
-
+    
+        public List<List<String>> groupAnagrams(String[] strs) {
+            Map<String, List<String>> map = new HashMap<>();
+            for(String word: strs){
+                char[] chars = word.toCharArray();
+                Arrays.sort(chars);
+                String sortedWord = new String(chars);
+    
+                if(!map.containsKey(sortedWord)){
+                    map.put(sortedWord, new ArrayList<>());
+    
+                }
+                map.get(sortedWord).add(word);
             }
-            map.get(sortedWord).add(word); //original word is added to the map
-
+            return new ArrayList<>(map.values());
         }
-        return new ArrayList<>(map.values()); // map.values returns a collection of all lists in the map 
-
+       
+        }
     
-    
-}
-}
