@@ -1,4 +1,4 @@
-package CS_homework.DesignPatterns.Creational;
+package CS_homework.DesignPatterns.Creational.Decorator;
 
 public class ChristmasTree {
     String decorate();
