@@ -6,7 +6,7 @@ import CS_homework.CacheImpl.FIFOCache;
 import CS_homework.CacheImpl.LFUCacheBuilder;
 import CS_homework.CacheImpl.*;
 
-public class CahceFactory {
+public class CacheFactory {
     public static ICache createCacheInstance (CS_homework.CacheImpl.CacheTypeEnum type, int capacity) {
         switch(type) {
             case CacheTypeEnum.FIFO:

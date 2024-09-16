@@ -10,7 +10,7 @@ public class App {
     }
 
     private static void testFiFOCache() {
-        ICache cache = CahceFactory.createCacheInstance(CacheTypeEnum.LFU, 3);
+        ICache cache = CacheFactory.createCacheInstance(CacheTypeEnum.LFU, 3);
         cache.put("key1", 1); //key1:1, freq 1
         cache.put("key1", 6); // key1:6    freq 2
         cache.put("key2", 2); // key1:6, key2:2
@@ -32,7 +32,7 @@ public class App {
     }
 
     private static void testFIFOCache() {
-        ICache cache = CahceFactory.createCacheInstance(CacheTypeEnum.FIFO, 3);
+        ICache cache = CacheFactory.createCacheInstance(CacheTypeEnum.FIFO, 3);
 
         cache.put("key1", 1); // [key1:1, ]
         cache.put("key2", 2); // [key1:1, key2:2, ]

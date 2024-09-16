@@ -1,4 +1,4 @@
-package CS_homework.DesignPatterns;
+package CS_homework.DesignPatterns.Creational;
 
 import CS_homework.DesignPatterns.Creational.Adapter.Printer;
 import CS_homework.DesignPatterns.Creational.Adapter.PrinterAdapter;
