@@ -1,4 +1,4 @@
-package CS_homework.DesignPatterns.Bridge;
+package CS_homework.DesignPatterns.Creational.Bridge;
 
 public class Vehicle {
     protected Workshop workShop1;
@@ -10,6 +10,6 @@ public class Vehicle {
 
     }
     abstract public void manufacture();
-    
+
     
 }

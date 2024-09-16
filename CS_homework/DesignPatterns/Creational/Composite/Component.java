@@ -1,4 +1,4 @@
-package CS_homework.DesignPatterns.Composite;
+package CS_homework.DesignPatterns.Creational.Composite;
 
 public interface Component {
     public void showPrice();

@@ -1,5 +1,5 @@
-package CS_homework.DesignPatterns.Composite;
-import CS_homework.DesignPatterns.Composite.Leaf;
+package CS_homework.DesignPatterns.Creational.Composite;
+import CS_homework.DesignPatterns.Creational.Composite.Leaf;
 
 
 public class Main {

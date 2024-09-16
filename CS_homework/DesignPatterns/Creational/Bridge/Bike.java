@@ -1,4 +1,4 @@
-package CS_homework.DesignPatterns.Bridge;
+package CS_homework.DesignPatterns.Creational.Bridge;
 
 public class Bike extends Vehicle {
     public Bike(Workshop workShop1, Workshop workShop2) {
@@ -11,7 +11,7 @@ public class Bike extends Vehicle {
         System.out.println("Bike");
         workShop1.work();
         workShop2.work();
-        
+
     }
     
 }

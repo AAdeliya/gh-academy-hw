@@ -1,4 +1,4 @@
-package CS_homework.DesignPatterns.Bridge;
+package CS_homework.DesignPatterns.Creational.Bridge;
 
 interface Workshop {
     abstract public void work();

@@ -1,4 +1,4 @@
-package CS_homework.DesignPatterns.Bridge;
+package CS_homework.DesignPatterns.Creational.Bridge;
 
 public class BridgePattern {
     public static void main(String[] args) {
