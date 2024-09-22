@@ -17,8 +17,6 @@ public class HomeWork1 {
         }
        
     }
-    
-
     // public int Fibonacci(int n) {
     //     if (n<= 1 ) {
     //         return 1;
