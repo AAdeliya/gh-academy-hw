@@ -10,6 +10,5 @@ public class CloseFileCommand implements Command{
 	public void execute() {
 		this.fileSystem.closeFile();
 	}
-
 }
     
