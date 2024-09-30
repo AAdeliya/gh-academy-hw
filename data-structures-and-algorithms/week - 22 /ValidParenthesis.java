@@ -20,9 +20,6 @@ public class ValidParenthesis {
 
             return stack.isEmpty();
         }
-      
-
-        
-    }
+      }
     
 }
