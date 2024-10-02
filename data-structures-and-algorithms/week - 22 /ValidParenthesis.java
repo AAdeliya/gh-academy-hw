@@ -6,7 +6,7 @@ public class ValidParenthesis {
         for (char c : s.toCharArray()) {
             if (c == '(') 
             stack.push(')');
-            else if (c == '{')
+        else if (c == '{')
             stack.push('}');
             else if (c== '[')
             stack.push(']');
