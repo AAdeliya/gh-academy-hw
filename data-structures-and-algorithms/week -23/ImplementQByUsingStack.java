@@ -7,9 +7,7 @@ public class ImplementQByUsingStack {
 
     public void push() {
         input.push(x);
-
-
-    }
+     }
 
     public int pop() {
         int x =  peek();
