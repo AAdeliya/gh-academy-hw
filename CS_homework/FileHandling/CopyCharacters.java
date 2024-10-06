@@ -1,3 +1,4 @@
+
 public class CopyCharacters {
     public static void main(String[] args) throws IOException {
 
@@ -5,7 +6,7 @@ public class CopyCharacters {
         FileWriter outputStream = null;
 
         try {
-            inputStream = new FileReader("xanadu.txt");
+            inputStream = new FileReader("filehandling.txt");
             outputStream = new FileWriter("characteroutput.txt");
 
             int c;
