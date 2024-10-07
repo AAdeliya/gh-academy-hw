@@ -13,4 +13,11 @@ public class DesignCircularDeque {
             }
     
         }
+        public MyCircularDeque(int k) {
+            Node head;
+            Node rear;
+            int size;
+            int cappacity;
+            
+        }
 }
