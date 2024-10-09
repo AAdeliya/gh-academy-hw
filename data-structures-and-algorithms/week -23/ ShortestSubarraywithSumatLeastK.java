@@ -26,8 +26,6 @@ public class  ShortestSubarraywithSumatLeastK {
             d.addLast(i);
         }
         return res <= B ? res : -1;
-
-
-    }
+     }
     
 }
