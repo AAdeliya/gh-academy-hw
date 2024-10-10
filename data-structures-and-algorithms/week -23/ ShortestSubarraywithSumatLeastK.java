@@ -18,9 +18,7 @@ public class  ShortestSubarraywithSumatLeastK {
 
             while (d.size() > 0 && B[i] - B[d.getFirst()] >= K) 
             res = Math.min(res, i - d.pollFirst());
-
-
-
+            
             while (d.size() > 0 && B[i] <= B[d.getLast()])
             d.pollLast();
             d.addLast(i);

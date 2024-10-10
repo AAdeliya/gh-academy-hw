@@ -57,10 +57,8 @@ public class DesignCircularDeque {
             return true;
 
             }
-
-
-        
-        public boolean deleteLast() {
+            
+            public boolean deleteLast() {
             if (isEmpty()) return false;
             if (size == 1) {
                 head == null;
