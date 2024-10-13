@@ -3,7 +3,7 @@ import java.util.Deque;
 
 public class SlidingWindowMaximum {
     public int[] maxSlidingWindow(int[] a, int k ) {
-        if (k== null || k<=0) {
+        if (k == null || k <= 0) {
             return new int[0];
 
     }
@@ -17,7 +17,7 @@ public class SlidingWindowMaximum {
             q.poll();
         }
 
-        while( !q.isEmpty() && a[i] > a[q.peekLast()]) {
+        while (!q.isEmpty() && a[i] > a[q.peekLast()]) {
             q.pollLast();
         }
 
