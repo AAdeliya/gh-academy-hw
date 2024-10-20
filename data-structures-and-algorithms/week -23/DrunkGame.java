@@ -9,9 +9,7 @@ public class DrunkGame {
         for (int i=0; x; i<5; i++) {
             x = in.nextInt();
             first.offer(x);
-
-        
-        }
+          }
 
         for (int i = 0; x; i<5; i++) {
             x = in.nextInt();
