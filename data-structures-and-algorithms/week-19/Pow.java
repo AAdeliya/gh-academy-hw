@@ -11,6 +11,7 @@ public class Pow {
         return myPow_(x, exponent);
     
         }
+
         private double myPow_(double x,  long exponent) {
             if (exponent == 0) return 1;
 
