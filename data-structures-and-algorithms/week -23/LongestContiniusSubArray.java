@@ -34,5 +34,4 @@ public class LongestContiniusSubArray {
 
         return maxLength;
      }
-    
-}
+    }
