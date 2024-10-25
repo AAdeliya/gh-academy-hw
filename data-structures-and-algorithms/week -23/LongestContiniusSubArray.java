@@ -31,7 +31,6 @@ public class LongestContiniusSubArray {
 
             maxLength = Math.max(maxLength, right = left +1);
  }
-
-        return maxLength;
+ return maxLength;
      }
     }
