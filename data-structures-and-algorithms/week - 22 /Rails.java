@@ -38,8 +38,10 @@ public class Rails {
 
                     x = in.nextInt();
                 }
+
                 System.out.println(success ? "Yes" : "No");
             }
+            
             System.out.println();
         }
     }
