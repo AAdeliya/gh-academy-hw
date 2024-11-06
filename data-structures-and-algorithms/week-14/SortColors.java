@@ -42,7 +42,7 @@ public void sortColors(int[] nums) {
             nums[mid] = temp;
             low++;
             mid++;
-            
+
         } else if (nums[mid] == 1) {
             mid++;
         } else if (nums[mid] == 2) {
@@ -51,6 +51,7 @@ public void sortColors(int[] nums) {
             nums[mid] = nums[high];
             nums[high] = temp;
             high--;
+            
         }
     }
 }
