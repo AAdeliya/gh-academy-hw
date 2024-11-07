@@ -18,9 +18,6 @@ public class SortArrayByParity {
             }
         }
         return nums;
-
-
-
-    } 
+     } 
     
 }
