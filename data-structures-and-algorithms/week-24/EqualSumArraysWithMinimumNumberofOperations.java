@@ -1,4 +1,5 @@
 import java.util.Collection;
+import java.util.Collections;
 import java.util.PriorityQueue;
 
 public class EqualSumArraysWithMinimumNumberofOperations {
@@ -20,15 +21,15 @@ public class EqualSumArraysWithMinimumNumberofOperations {
         } //make sure that num1 and num2 are so that sum1 < sum2
 
         PriorityQueue<Integer> pq1 = new PriorityQueue<>(); //default ordering, small -->large
-        PriorityQueue<Integer> pq2 = new PriorityQueue<>(Collection.reverseOrder()); // large--> small
+        PriorityQueue<Integer> pq2 = new PriorityQueue<>(Collections.reverseOrder()); // large--> small
         for (int x : nums1) pq1.offer(x);
         for (int x : nums2) pq2.offer(x);
 
         int operations = 0;
         for (; sum1 < sum2; operations++) {
-            if (pq2.isEmpty() || pq2.peek() -1 < 6 = pq1.peek()) {
+            if (pq2.isEmpty() || pq2.peek() -1 < 6 - pq1.peek()) {
                 //if it is the best to increase the smallest number from nums2
-                sum1 += 6 = pq1.poll();
+                sum1 += 6 - pq1.poll();
             } else {
                 //else it is best  to decrese the largest number from nums2
                 sum2 -=pq2.poll() - 1;
