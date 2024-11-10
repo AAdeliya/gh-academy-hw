@@ -8,8 +8,6 @@ public class LongestConsecutiveSequence {
 
         }
        
-    
-
     int longest_streak = 0;
     for (int n: set) {
         if (!set.contains(n-1)) {
