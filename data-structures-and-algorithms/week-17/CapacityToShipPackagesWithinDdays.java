@@ -1,5 +1,26 @@
 public class CapacityToShipPackagesWithinDdays {
     public int shipWithinDays(int[] weights, int D) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
        int left = 0;
        int right = 0;
        int answer = -1;
