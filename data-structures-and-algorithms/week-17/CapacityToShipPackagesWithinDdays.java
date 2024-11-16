@@ -14,7 +14,7 @@ public class CapacityToShipPackagesWithinDdays {
             int mid = left+right/2;
             int need = 1;
             int cur = 0;
-            for (int w: weights) {
+            for (int w : weights) {
                 if (cur + w > mid) {
                     need +=1;
                     cur = w;
