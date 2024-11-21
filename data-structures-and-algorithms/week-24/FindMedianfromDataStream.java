@@ -1,4 +1,5 @@
 import java.util.Collection;
+import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class FindMedianfromDataStream {
@@ -6,32 +7,34 @@ public class FindMedianfromDataStream {
     private PriorityQueue<Integer> minHeap;
     
     public MedianFinder() {
-        maxHeap = new PriorityQueue<>(Collection.reverseOrder());
+        maxHeap = new PriorityQueue<>(Comparator.reverseOrder());
         minHeap = new PriorityQueue<>();
+ 
         
     }
     
     public void addNum(int num) {
-        if (maxHeap.isEmpty() || num <=maxHeap.peek()) {
+        if (maxHeap.isEmpty() || num <= maxHeap.poll()) {
             maxHeap.offer(num);
         } else {
             minHeap.offer(num);
         }
 
-        if (maxHeap.size() > minHeap.size() + 1) {
+        if (maxHeap.size() > minHeap + 1) {
             minHeap.offer(maxHeap.poll());
-        } else if (minHeap.size() > maxHeap.size()) {
+        } else {
             maxHeap.offer(minHeap.poll());
         }
-        
+     
     }
     
     public double findMedian() {
-        if (maxHeap.size() == minHeap.size()) {
+        if (minHeap.size() == maxHeap.size()) {
             return (maxHeap.peek() + minHeap.peek()) / 2.0;
         } else {
-            return maxHeap.peek(); .. root of the maxheap
+            return maxHeap.peek();
         }
+    
         
     }
 }
