@@ -34,7 +34,5 @@ public class FindMedianfromDataStream {
         } else {
             return maxHeap.peek();
         }
-    
-        
     }
 }
