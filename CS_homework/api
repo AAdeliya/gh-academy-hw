@@ -1,0 +1,9 @@
+app.get('/articles/:articleId/comments', (res, res) >+ {
+    const { articleId } = req.params;
+    const comments = [];
+    //code to get comments by articleId
+    res.json(comments);
+
+});
+
+app.lesten(3000, () => xonsole.log('server started'))
