@@ -7,3 +7,18 @@ app.get('/articles/:articleId/comments', (res, res) >+ {
 });
 
 app.listen(3000, () => xonsole.log('server started'))
+
+app.get('/v1/employees', (res, res) => {
+    const employees = [];
+    //code to get employees
+    res.json(employees); 
+});
+
+app.get('/v2/employees', (res, res) => {
+    const employees = [];
+    //code to get employees
+    res.json(employees); 
+});
+
+//versioning is usually done with /v1, /v2/ etc added at the start of the API path 
+
