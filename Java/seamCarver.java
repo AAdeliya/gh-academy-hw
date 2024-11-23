@@ -1,3 +1,4 @@
+package Java;
 import edu.princeton.cs.algs4.Picture;
 
 public class SeamCarver {
