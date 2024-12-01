@@ -16,7 +16,7 @@ public class TopKFrequentWords {
 
     for (Map.Entry<String, Interger> entry : map.EntrySet()) {
         pq.offer(entry);
-        if (pq.size()  == k+1) {
+        if (pq.size()  == k + 1) {
             pq.poll();
         }
 
@@ -28,5 +28,5 @@ public class TopKFrequentWords {
 
     return result;
  }
- 
+
 }
