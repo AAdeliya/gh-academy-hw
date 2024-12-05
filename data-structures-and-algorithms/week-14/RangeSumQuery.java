@@ -16,5 +16,6 @@ public class RangeSumQuery {
 
         return prefix[right] + prefix [right-1];
     }
+    
     }
     
