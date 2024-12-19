@@ -108,7 +108,7 @@ public class MaximumProductsPairs {
     
 
 
-        //selection sort
+        //selection sort - finding the minimal element 
 
         // 247 ms, 5.01%
         // int n = nums.length;
