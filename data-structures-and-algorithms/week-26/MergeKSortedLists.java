@@ -9,7 +9,8 @@ public class MergeKSortedLists {
     private ListNode mergeAllList(ListNode[] lists, int left, int right) {
         //call this function recursively 
         
-        if (left >right) return null;
+        if (left > right) 
+        return null;
         if (left == right) return lists[left];
 
         int middle = (right+left)/2;
