@@ -33,6 +33,7 @@ public class MergeKSortedLists {
             l2.next = mergeTwoSortedList(l1, l2.next); 
             return l2;
         }
+        
         //the bigger large space consuption when we merge two list in the end
     }
 }
