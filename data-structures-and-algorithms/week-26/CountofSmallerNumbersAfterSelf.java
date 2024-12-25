@@ -13,7 +13,7 @@ public class CountofSmallerNumbersAfterSelf {
 
         //results[i] = count of smaller numbers a[j] after a[i] (j >i)
         List<Integer> results = new ArrayList<>();
-        for (int i = 0; i< n; i++) results.add(0);
+        for (int i = 0; i < n; i++) results.add(0);
 
         nergeSort(arr, 0, nums.length - 1, results);
         return results;
@@ -31,7 +31,7 @@ public class CountofSmallerNumbersAfterSelf {
 
         mergeSort(arr, left, mid, results);
 
-        
+
     }
     
 }
