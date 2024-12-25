@@ -10,6 +10,7 @@ public class CountofSmallerNumbersAfterSelf {
             arr[i][0] = nums[i];
             arr[i][1] = i; //original index
         }
+        
 
         //results[i] = count of smaller numbers a[j] after a[i] (j >i)
         List<Integer> results = new ArrayList<>();
