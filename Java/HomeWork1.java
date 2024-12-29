@@ -2,11 +2,11 @@ package Java;
 
 public class HomeWork1 {
     public boolean isPrime(int number) {
-        if (number <=1){
+        if (number <= 1){
              return false;
         }
 
-        for (int i = 2; i<=Math.sqrt(number); i++) {
+        for (int i = 2; i <= Math.sqrt(number); i++) {
             if (number % i == 0){
                 return false;
             }
@@ -18,7 +18,7 @@ public class HomeWork1 {
        
     }
     // public int Fibonacci(int n) {
-    //     if (n<= 1 ) {
+    //     if (n <= 1 ) {
     //         return 1;
     //     }
 
