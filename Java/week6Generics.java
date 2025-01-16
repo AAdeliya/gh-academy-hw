@@ -50,5 +50,22 @@ public static <T> void printArray(T[] array) {
 
 String[] strings = {"A", "B", "C"};
 printArray(strings);
+
+
+
+Upper Bound with a Class
+
+public class GenericExample {
+
+    public static <T extends Number> double sum(T num1, T num2) {
+        return num1.doubleValue() + num2.doubleValue();
+    }
+
+    public static void main(String[] args) {
+        System.out.println(sum(10, 20));           // Integers
+        System.out.println(sum(10.5, 20.3));      // Doubles
+        // System.out.println(sum("10", "20"));   // Compile-time error
+    }
+}
     
 }
