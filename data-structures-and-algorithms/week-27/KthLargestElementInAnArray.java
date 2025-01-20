@@ -1,4 +1,3 @@
-package data
 
 import java.util.Random;
 
@@ -16,7 +15,7 @@ public class KthLargestElementInAnArray {
         swap(arr, left, randIndex);
 
         int pivot = arr[left];
-        int soreIndex = left + 1;
+        int storeIndex = left + 1;
         for (int i = left + 1; i <= right; i++) {
             if (arr[i] < pivot) {
                 swap(arr, i, storeIndex);
@@ -25,12 +24,16 @@ public class KthLargestElementInAnArray {
         }
 
         swap(arr, left, storeIndex - 1);
+        int l = storeIndex - 2;
+        int r = storeIndex;
 
-        if (storeIndex - 1 == k)
-            return arr[k];
-        if (storeIndex - 1 < k)
-            return quickSelect(arr, storeIndex, right, k);
-        return quickSelect(arr, left, storeIndex - 2, k);
+        while (l >= left && arr[l] == pivot) l--;
+        while (r <= righr && arr[r] == pivot) r++;
+
+        if (l + 1 <= k && k <= r - 1) return arr[k];
+        if (k <= l) return quickSelect(arr, left, l, k)
+        
+        return quickSelect(arr, r, right, k);
     }
 
     private static void swap(int[] arr, int i, int j) {
