@@ -33,8 +33,24 @@ public class RemoveKDigits {
         s.push(num chatAt(i));
 
         if (s.size() == 1 && s.peek() == '0') {
-            
+            s.pop();
+
         } 
+
     }
+
+    while(k>0&&!s.empty())
+
+    {
+        res.append(s.pop());
+    }
+
+    // reverse the string
+    res.reverse();if(res.length()==0)
+    {
+        return "0";
+    }
+
+    return res.toString();
 
 }
