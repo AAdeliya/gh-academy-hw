@@ -5,52 +5,59 @@ import java.util.Stack;
 -structures-and-algorithms.week-28;
 
 public class RemoveKDigits {
-    if(nums.length()<=k)
+    // Number of operations greater than length, we return "0"
+    if(num.length()<=k)
     {
-        return "0";
-    }
+    return "0";
+}
 
-    // k is 0, no need of removing / performing any operations
+    // k is 0, no need of removing / performing any operation
     if(k==0)
     {
         return num;
-
     }
 
-    StringBuilder res = new StringBuilder();
-    Stack<Character> s = new Stack<>();
+    StringBuilder res = new StringBuilder(); // Result string
+    Stack<Character> s = new Stack<>(); // Character stack
 
-    s.push(num.chartAt(0)); // pushing first character into stack
+    s.push(num.charAt(0)); // Pushing first character into stack
 
     for(
-    int i = 1;i<nums.length();++i)
+    int i = 1;i<num.length();++i)
     {
         while (k > 0 && !s.empty() && num.charAt(i) < s.peek()) {
+            // If k greater than 0 and our stack is not empty and the upcoming digit,
+            // is less than the current top, then we will pop the stack top
             --k;
             s.pop();
         }
 
-        s.push(num chatAt(i));
+        s.push(num.charAt(i));
 
+        // Popping preceding zeroes
         if (s.size() == 1 && s.peek() == '0') {
             s.pop();
-
-        } 
-
+        }
     }
 
+    // For cases like "456" where every num[i] >= s.peek()
     while(k>0&&!s.empty())
-
     {
+        --k;
+        s.pop();
+    }
+
+    while(!s.empty())
+    {
+        // Pushing stack top to string
         res.append(s.pop());
     }
 
-    // reverse the string
-    res.reverse();if(res.length()==0)
+    // Reverse the string
+    res.reverse();
+
+    if(res.length()==0)
     {
         return "0";
-    }
-
-    return res.toString();
-
-}
+    }return res.toString();
+}}
