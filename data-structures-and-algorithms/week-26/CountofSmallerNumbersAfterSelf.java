@@ -6,7 +6,8 @@ public class CountofSmallerNumbersAfterSelf {
         //arr[0..n-1] = pairs (nums[i], i)
 
         int[][] arr = new int[n][2];
-        for (int i = 0; i<n; i++) {
+        
+        for (int i = 0; i < n; i++) {
             arr[i][0] = nums[i];
             arr[i][1] = i; //original index
         }
@@ -67,5 +68,5 @@ public class CountofSmallerNumbersAfterSelf {
             arr[i] = tmp[k];
         }
     }
-    
+
 }
