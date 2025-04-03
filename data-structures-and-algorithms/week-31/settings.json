@@ -1,0 +1,6 @@
+{
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "java.semanticHighlighting.enabled": false,
+    "java.referencesCodeLens.enabled": false
+  }
