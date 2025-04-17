@@ -1,9 +1,7 @@
-package data
+package data-structures-and-algorithms.week-32;
 
 import java.io.PrintWriter;
 import java.util.Scanner;
-
--structures-and-algorithms.week-32;
 
 public class DepthFirstSearchComponentsSize {
     static int n;
@@ -42,6 +40,6 @@ static void dfs(int vertex) {
         if (adjacencyMatrix[vertex][neighbor] == 1 && !visited[neighbor]) {
             dfs(neighbor);
         }}
-        
+
     }
 }
