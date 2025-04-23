@@ -1,11 +1,11 @@
-package data
+package data-structures-and-algorithms.week-32;
 
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
--structures-and-algorithms.week-32;
+
 
 public class BanquetSeating {
     static int n;
