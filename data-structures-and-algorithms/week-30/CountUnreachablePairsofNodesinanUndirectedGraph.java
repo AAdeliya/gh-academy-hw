@@ -1,8 +1,7 @@
-package data
-
+package data-structures-and-algorithms.week-30;
 import java.util.Map;
 
--structures-and-algorithms.week-30;
+
 
 public class CountUnreachablePairsofNodesinanUndirectedGraph {
     private class DSU {
