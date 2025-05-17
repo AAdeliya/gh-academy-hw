@@ -4,6 +4,8 @@ import java.util.Map;
 
 -structures-and-algorithms.week-4;
 
+//kadane algorithm 
+
 public class ContiguousArray {
     public int findMaxLength(int[] nums) {
         Map<Integer, Integer> map =  new HashMap<>();
