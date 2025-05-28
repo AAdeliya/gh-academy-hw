@@ -21,7 +21,7 @@ public class SortArrayByParityII {
         return A;
     }
 
-    private int swap(int[] A, int i, int j) {
+    private void swap(int[] A, int i, int j) {
         int temp = A[i];
         A[i] = A[j];
         A[j] = temp;
