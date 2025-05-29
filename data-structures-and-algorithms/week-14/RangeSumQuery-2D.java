@@ -22,7 +22,12 @@ public class RangeSumQuery-2D {
             - sum[r2][c2 - 1]
             - sum[r1 - 1][c2]
             + sum[r1 - 1][c1 - 1];
-        }
+
+            // int RED_RECTANGLE = sums[row2+1][col2+1];
+        // int PURPLE_RECTANGLES = sums[row1][col2+1] + sums[row2+1][col1];
+        // int BLUE_RECTANGLE = sums[row1][col1];
+        // return RED_RECTANGLE - PURPLE_RECTANGLES + BLUE_RECTANGLE;
+        // }
     }
     
 }
