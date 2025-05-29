@@ -1,7 +1,7 @@
 public class RangeSumQuery-Immutable
 {
     class NumArray {
-        int[] prefix; //array to store prefix sum
+       private  int[] prefix; //array to store prefix sum
     }
 
     public void NumArray(int[] nums) {
